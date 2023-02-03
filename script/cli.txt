@@ -2,7 +2,7 @@
 dotnet new sln
 dotnet sln add (ls -r **/*.csproj)
 
-//for virtual folders (dont destroy sln) use extension vscode-solution-explorer 
+//for virtual folders (normal folders make sln not working) use extension vscode-solution-explorer 
 
 //generate local nuget
 dotnet pack -c Release -o C:\atari-monk\nugets
