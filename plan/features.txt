@@ -1,5 +1,7 @@
 1. Create repository and solution for my apps shared libraries.
+First, start from Inventory web app libs.
 2a. Script to generate local nuget form DIHelper lib.
 2b. Script to generate local nuget form every lib of this solution.
-3a. Install latest .net runtime ().
+3a. Install latest .net runtime. 
+Done (7.0.102).
 3b. Update proj lib proj files to use latest net runtime (possible only after finishing generating all nugets and consuming them in apps).
