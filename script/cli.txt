@@ -1,5 +1,6 @@
 //sln related
-dotnet sln add
+dotnet new sln
+dotnet sln add (ls -r **/*.csproj)
 
 //generate local nuget
 dotnet pack -c Release -o C:\atari-monk\nugets

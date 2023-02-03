@@ -1,7 +1,7 @@
 
 #generate nugets of my libs dependent on my dependent libs
 $path = 'lib2'
-$libs = 'EFCore.Helper'
+$libs = 'EFCore.Helper', 'Serilog.Wrapper'
 
 #up from script dir
 cd ..
