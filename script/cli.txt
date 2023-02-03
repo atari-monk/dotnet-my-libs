@@ -1,0 +1,2 @@
+//generate local nuget
+dotnet pack -c Release -o C:\atari-monk\nugets

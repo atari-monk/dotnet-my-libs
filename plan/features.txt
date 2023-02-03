@@ -1,5 +1,5 @@
 1. Create repository and solution for my apps shared libraries.
 2a. Script to generate local nuget form DIHelper lib.
-2b. Update sript generator to generate Script for local nuget generation and use it for all libraries.
+2b. Script to generate local nuget form every lib of this solution.
 3a. Install latest .net runtime ().
 3b. Update proj lib proj files to use latest net runtime.
