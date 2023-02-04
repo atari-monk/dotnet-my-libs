@@ -53,6 +53,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataToTable", "DataToTable\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataToTable.Tests", "DataToTable.Tests\DataToTable.Tests.csproj", "{BC9522F0-EB3A-42F0-833B-99C2DC61CBA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetExtension", "DotNetExtension\DotNetExtension.csproj", "{A23A7CBD-A976-4D33-A947-D6546BBE8B76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetExtension.Tests", "DotNetExtension.Tests\DotNetExtension.Tests.csproj", "{AB6D2220-DF44-4065-990B-C3FD2B2DBCB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -142,6 +146,14 @@ Global
 		{BC9522F0-EB3A-42F0-833B-99C2DC61CBA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC9522F0-EB3A-42F0-833B-99C2DC61CBA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC9522F0-EB3A-42F0-833B-99C2DC61CBA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A23A7CBD-A976-4D33-A947-D6546BBE8B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23A7CBD-A976-4D33-A947-D6546BBE8B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23A7CBD-A976-4D33-A947-D6546BBE8B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23A7CBD-A976-4D33-A947-D6546BBE8B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB6D2220-DF44-4065-990B-C3FD2B2DBCB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB6D2220-DF44-4065-990B-C3FD2B2DBCB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB6D2220-DF44-4065-990B-C3FD2B2DBCB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB6D2220-DF44-4065-990B-C3FD2B2DBCB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CD43EC44-973D-4028-8D02-5B520BC5B43F} = {B5C32B92-972A-4093-BC68-7CE404FC454B}
