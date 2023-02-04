@@ -1,6 +1,6 @@
 
 #generate nugets of my libs independent from my other libs 
-$libs = 'DIHelper'
+$libs = 'DIHelper', 'CommandDotNet.IoC.Unity'
 
 #up from script dir
 cd ..

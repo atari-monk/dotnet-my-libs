@@ -1,6 +1,6 @@
 
 #generate nugets of my libs dependent on my independent libs
-$libs = 'Config.Wrapper', 'CLIHelper'
+$libs = 'Config.Wrapper', 'CLIHelper', 'ModelHelper'
 
 #up from script dir
 cd ..
