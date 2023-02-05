@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetExtension.Tests", "Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDCommandHelper", "CRUDCommandHelper\CRUDCommandHelper.csproj", "{1071AE6D-EDAE-426B-8847-00313857D4D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnit.Helper", "XUnit.Helper\XUnit.Helper.csproj", "{4DC75D6F-5DA0-4310-A72C-49F4EF8D9105}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -160,6 +162,10 @@ Global
 		{1071AE6D-EDAE-426B-8847-00313857D4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1071AE6D-EDAE-426B-8847-00313857D4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1071AE6D-EDAE-426B-8847-00313857D4D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DC75D6F-5DA0-4310-A72C-49F4EF8D9105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC75D6F-5DA0-4310-A72C-49F4EF8D9105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC75D6F-5DA0-4310-A72C-49F4EF8D9105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC75D6F-5DA0-4310-A72C-49F4EF8D9105}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CD43EC44-973D-4028-8D02-5B520BC5B43F} = {B5C32B92-972A-4093-BC68-7CE404FC454B}
