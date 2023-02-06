@@ -1,6 +1,6 @@
 
 #generate nugets of my libs dependent on my dependent libs
-$libs = 'EFCore.Helper', 'Serilog.Wrapper', 'CommandDotNet.Helper', 'CommandDotNet.Unity.Helper', 'DataToTable', 'Better.Console.Tables.TestApp', 'CRUDCommandHelper'
+$libs = 'EFCore.Helper', 'Serilog.Wrapper', 'CommandDotNet.Helper', 'CommandDotNet.Unity.Helper', 'DataToTable', 'Better.Console.Tables.TestApp', 'CRUDCommandHelper', 'CLIReader', 'CLIWizardHelper', 'CLIFramework'
 
 #up from script dir
 cd ..

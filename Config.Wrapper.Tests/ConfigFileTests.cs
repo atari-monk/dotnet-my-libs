@@ -7,9 +7,10 @@ namespace Config.Wrapper.Tests;
 
 public abstract class ConfigFileTests
 {
+    private const string Repo = "dotnet-my-libs";
     private const string ConfigFile = "appsettings.json";
     private const string RootPath = "C:\\atari-monk";
-    private const string TestFolderPath = "Code\\my-net-libs\\Config.Wrapper.Tests\\ConfigFile";
+    private const string TestFolderPath = $"Code\\{Repo}\\Config.Wrapper.Tests\\ConfigFile";
     private const string NoFilePath = $"{RootPath}\\{TestFolderPath}\\NoFile";
     private const string OkFilePath = $"{RootPath}\\{TestFolderPath}\\Ok";
     private const string NotOkFilePath = $"{RootPath}\\{TestFolderPath}\\NotOk";
