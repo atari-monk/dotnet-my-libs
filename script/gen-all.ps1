@@ -1,8 +1,20 @@
 
 #generate all nugets of all my libs in correct order
+$path = "C:\atari-monk\nugets";
 
-.\gen-lib0.ps1
-cd ./script
-.\gen-lib1.ps1
-cd ./script
-.\gen-lib2.ps1
+#generate nugets of my libs independent from my other libs 
+$libs0 = 'DIHelper', 'CommandDotNet.IoC.Unity', 'DotNetExtension'
+#generate nugets of my libs dependent on my independent libs
+$libs1 = 'Config.Wrapper', 'CLIHelper', 'ModelHelper'
+#generate nugets of my libs dependent on my dependent libs
+$libs2 = 'EFCore.Helper', 'Serilog.Wrapper', 'CommandDotNet.Helper', 'CommandDotNet.Unity.Helper', 'DataToTable', 'Better.Console.Tables.TestApp', 'CRUDCommandHelper', 'CLIReader', 'CLIWizardHelper', 'CLIFramework'
+
+#up from script dir
+Set-Location ..
+
+foreach ($lib in $libs0 + $libs1 + $libs2) {
+  Set-Location $lib
+  dotnet pack -c Release -o $path
+  #up from lib dir
+  Set-Location ..
+}
