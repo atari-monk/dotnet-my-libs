@@ -3,7 +3,7 @@
 $path = "C:\atari-monk\nugets";
 
 #generate nugets of my libs independent from my other libs 
-$libs0 = 'DIHelper', 'CommandDotNet.IoC.Unity', 'DotNetExtension'
+$libs0 = 'DotNetTool', 'DIHelper', 'CommandDotNet.IoC.Unity', 'DotNetExtension'
 #generate nugets of my libs dependent on my independent libs
 $libs1 = 'Config.Wrapper', 'CLIHelper', 'ModelHelper'
 #generate nugets of my libs dependent on my dependent libs

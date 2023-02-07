@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLIReader.Tests", "CLIReade
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLIWizardHelper", "CLIWizardHelper\CLIWizardHelper.csproj", "{65C3E37E-BF52-41CD-915B-3EF191026A9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTool", "DotNetTool\DotNetTool.csproj", "{D35CBD6E-345B-4666-AE5D-C0FBCB9BAF82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -202,6 +204,10 @@ Global
 		{65C3E37E-BF52-41CD-915B-3EF191026A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65C3E37E-BF52-41CD-915B-3EF191026A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65C3E37E-BF52-41CD-915B-3EF191026A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D35CBD6E-345B-4666-AE5D-C0FBCB9BAF82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35CBD6E-345B-4666-AE5D-C0FBCB9BAF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35CBD6E-345B-4666-AE5D-C0FBCB9BAF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35CBD6E-345B-4666-AE5D-C0FBCB9BAF82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CD43EC44-973D-4028-8D02-5B520BC5B43F} = {B5C32B92-972A-4093-BC68-7CE404FC454B}
