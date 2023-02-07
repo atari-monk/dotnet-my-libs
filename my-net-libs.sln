@@ -103,6 +103,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitPath.Lib", "GitPath.Lib\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitPath.Tests", "GitPath.Tests\GitPath.Tests.csproj", "{9F1D120A-287D-460F-9C66-4DD63625EC02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityContainer.Tests", "UnityContainer.Tests\UnityContainer.Tests.csproj", "{3346470A-1871-4AB3-85EF-FD52BB8D0C9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -292,6 +294,10 @@ Global
 		{9F1D120A-287D-460F-9C66-4DD63625EC02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F1D120A-287D-460F-9C66-4DD63625EC02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F1D120A-287D-460F-9C66-4DD63625EC02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3346470A-1871-4AB3-85EF-FD52BB8D0C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3346470A-1871-4AB3-85EF-FD52BB8D0C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3346470A-1871-4AB3-85EF-FD52BB8D0C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3346470A-1871-4AB3-85EF-FD52BB8D0C9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CD43EC44-973D-4028-8D02-5B520BC5B43F} = {B5C32B92-972A-4093-BC68-7CE404FC454B}
