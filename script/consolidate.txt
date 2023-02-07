@@ -13,6 +13,14 @@ dotnet pack -c Release -o C:\atari-monk\nugets
 //add nuget
 dotnet add package name 
 
+//PackageReference
+<PackageReference Include="" Version="1.0.0"/>
+
+//ProjectReference
+<ItemGroup>
+	<ProjectReference Include="..\Log.Data\Log.Data.csproj" />
+</ItemGroup>
+	
 //example of explicit refs in proj, this is beeing replaced by nugets
 <!--Debug refs-->
 <!-- <ItemGroup>
