@@ -1,13 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RestoreSources>$(RestoreSources);C:\atari-monk\nugets;https://api.nuget.org/v3/index.json</RestoreSources>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="CLIFramework" Version="1.0.0" />
     <PackageReference Include="DIHelper" Version="1.0.0" />
@@ -15,6 +13,5 @@
     <PackageReference Include="DataToTable" Version="1.0.0" />
     <PackageReference Include="ModelHelper" Version="1.0.0" />
     <PackageReference Include="CLIReader" Version="1.0.0" />
-	</ItemGroup>
-
+  </ItemGroup>
 </Project>

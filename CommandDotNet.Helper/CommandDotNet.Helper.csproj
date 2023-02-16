@@ -1,16 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
     <RestoreSources>$(RestoreSources);C:\atari-monk\nugets;https://api.nuget.org/v3/index.json</RestoreSources>
-	</PropertyGroup>
-	<ItemGroup>
-		<PackageReference Include="CommandDotNet" Version="6.1.0-alpha.repl" />
-		<PackageReference Include="CommandDotNet.DataAnnotations" Version="2.0.3" />
-		<PackageReference Include="CommandDotNet.NameCasing" Version="3.0.1" />
-		<PackageReference Include="Config.Wrapper" Version="1.0.0" />
-		<PackageReference Include="DIHelper" Version="1.0.0" />
-		<PackageReference Include="Serilog" Version="2.11.0" />
-	</ItemGroup>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CommandDotNet" Version="6.1.0-alpha.repl" />
+    <PackageReference Include="CommandDotNet.DataAnnotations" Version="2.0.3" />
+    <PackageReference Include="CommandDotNet.NameCasing" Version="3.0.1" />
+    <PackageReference Include="Config.Wrapper" Version="1.0.0" />
+    <PackageReference Include="DIHelper" Version="1.0.0" />
+    <PackageReference Include="Serilog" Version="2.11.0" />
+  </ItemGroup>
 </Project>

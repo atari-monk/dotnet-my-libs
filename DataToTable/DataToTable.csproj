@@ -1,15 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
     <RestoreSources>$(RestoreSources);C:\atari-monk\nugets;https://api.nuget.org/v3/index.json</RestoreSources>
-	</PropertyGroup>
-	<ItemGroup>
-		<PackageReference Include="DIHelper" Version="1.0.0" />
-		<PackageReference Include="ModelHelper" Version="1.0.0" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
-		<PackageReference Include="Unity.Abstractions" Version="5.11.7" />
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DIHelper" Version="1.0.0" />
+    <PackageReference Include="ModelHelper" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Unity.Abstractions" Version="5.11.7" />
     <PackageReference Include="BetterConsoleTables" Version="2.0.4-rc1" />
-	</ItemGroup>
+  </ItemGroup>
 </Project>
