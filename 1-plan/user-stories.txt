@@ -3,3 +3,4 @@
 3. User should be able to use latest .net runtime with libs in this solution.
 4. User should be able to use latest nugets in this solution.
 5. User is able to minimize number of projs based on their value.
+6. User needs to refactor lib if it's needed. 

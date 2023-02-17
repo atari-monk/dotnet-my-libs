@@ -3,3 +3,4 @@
 3. Install latest .net runtime. (7.0.102). Update proj files to use latest net runtime.
 4. Update all nugets to latest version.
 5. Minimize number of projects if possible and makes sense.
+6. Refactor very badly written libs.
