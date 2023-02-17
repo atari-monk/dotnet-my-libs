@@ -1,20 +1,20 @@
-
-#generate all nugets of all my libs in correct order
 $path = "C:\atari-monk\nugets";
 
-#generate nugets of my libs independent from my other libs 
-$libs0 = 'DotNetTool', 'Connection.Builder', 'DIHelper', 'CommandDotNet.IoC.Unity', 'DotNetExtension'
-#generate nugets of my libs dependent on my independent libs
-$libs1 = 'Config.Wrapper', 'CLIHelper', 'ModelHelper'
-#generate nugets of my libs dependent on my dependent libs
-$libs2 = 'EFCore.Helper', 'Serilog.Wrapper', 'CommandDotNet.Helper', 'CommandDotNet.Unity.Helper', 'CommandDotNet.MDI.Helper', 'DataToTable', 'Better.Console.Tables.TestApp', 'CRUDCommandHelper', 'CLIReader', 'CLIWizardHelper', 'CLIFramework'
+#libs independent from my libs 
+$libs0 = 'DotNetTool', 'Connection.Builder', 'DIHelper', 'CommandDotNet.IoC.Unity', 'DotNetExtension';
+#libs dependent on libs0
+$libs1 = 'Config.Wrapper', 'CLIHelper', 'ModelHelper';
+#libs dependent on libs0 and/or libs1
+$libs2 = 'EFCore.Helper', 'Serilog.Wrapper', 'CommandDotNet.Helper', 'CommandDotNet.Unity.Helper', 'CommandDotNet.MDI.Helper', 'DataToTable', 'Better.Console.Tables.TestApp', 'CRUDCommandHelper', 'CLIReader', 'CLIWizardHelper', 'CLIFramework';
 
-#up from script dir
+$libs = $libs0 + $libs1 + $libs2;
+
 Set-Location ..
 
-foreach ($lib in $libs0 + $libs1 + $libs2) {
+foreach ($lib in $libs) {
   Set-Location $lib
+
   dotnet pack -c Release -o $path
-  #up from lib dir
+  
   Set-Location ..
 }
