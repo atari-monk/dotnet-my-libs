@@ -1,4 +1,5 @@
-#find all csproj files recursive in this directory
+#this changes net version to net7.0 in csproj files of this sln
+#find all csproj files recursive in sln directory
 $paths = Get-ChildItem -Path ../ -include *.csproj -Recurse
 
 $OnlyUpdateMatchingFrameworks = $true #can also be #false

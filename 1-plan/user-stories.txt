@@ -3,4 +3,6 @@
 3. User should be able to use latest .net runtime with libs in this solution.
 4. User should be able to use latest nugets in this solution.
 5. User is able to minimize number of projs based on their value.
-6. User needs to refactor lib if it's needed. 
+6. User needs to refactor lib if it's needed.
+7. User should be able to run and pass all tests in sln.
+8. User should be able to run and validate as correct, all the test apps in sln.

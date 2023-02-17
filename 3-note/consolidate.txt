@@ -1,3 +1,5 @@
+//notes done during consolidating libs form many repos to one
+
 //sln related
 dotnet new sln
 dotnet sln add (ls -r **/*.csproj)

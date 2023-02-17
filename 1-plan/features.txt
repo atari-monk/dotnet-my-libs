@@ -4,3 +4,5 @@
 4. Update all nugets to latest version.
 5. Minimize number of projects if possible and makes sense.
 6. Refactor very badly written libs.
+7. Pass all tests.
+8. Run and ok all test apps.

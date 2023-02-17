@@ -1,3 +1,4 @@
+#this generates local nugets from my libs in this sln
 $path = "C:\atari-monk\nugets";
 
 #libs independent from my libs 

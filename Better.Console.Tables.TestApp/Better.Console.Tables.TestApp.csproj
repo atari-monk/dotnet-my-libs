@@ -31,4 +31,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <!-- <ItemGroup>
+    <ProjectReference Include="..\CommandDotNet.Helper\CommandDotNet.Helper.csproj" />
+    <ProjectReference Include="..\CommandDotNet.Unity.Helper\CommandDotNet.Unity.Helper.csproj" />
+  </ItemGroup> -->
 </Project>
