@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="CommandDotNet" Version="6.1.0-alpha.repl" />
+    <PackageReference Include="CommandDotNet" Version="7.0.2" />
     <PackageReference Include="Unity" Version="5.11.10" />
   </ItemGroup>
 </Project>
