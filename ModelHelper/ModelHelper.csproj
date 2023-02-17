@@ -7,7 +7,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DIHelper" Version="1.0.0" />
-    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="Unity.Abstractions" Version="5.11.7" />
   </ItemGroup>
 </Project>
