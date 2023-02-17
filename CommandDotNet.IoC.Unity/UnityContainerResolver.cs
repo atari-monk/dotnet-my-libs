@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using CommandDotNet.Builders;
 using Unity;
 
@@ -17,7 +18,7 @@ public class UnityContainerResolver : IDependencyResolver
         return container.Resolve(type);
     }
 
-    public bool TryResolve(Type type, out object? item)
+    public bool TryResolve(Type type, [NotNullWhen(true)] out object? item)
     {
         item = container.Resolve(type);
         return item is { };

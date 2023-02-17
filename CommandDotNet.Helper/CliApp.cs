@@ -17,7 +17,7 @@ public class CliApp<Commands>
 
   public AppRunner AppRunner => appRunner;
 
-  protected CliApp(
+  public CliApp(
         ILogger log
         , IConfigReader config)
   {

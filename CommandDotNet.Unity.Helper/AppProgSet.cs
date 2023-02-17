@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using DIHelper;
 using DIHelper.Unity;
 using Unity;
@@ -18,9 +19,9 @@ public class AppProgSet<TAppProg>
 
     public override void Register()
     {
-        Container.RegisterSingleton<IAppProgram, TAppProg>();
-        var appProg = (AppProgUnity<TAppProg>)Container.Resolve<IAppProgram>();
-        appProg.RegisterCommandClasses(Container);
-        appProg.SetDIContainer(Container);
+      Container.RegisterSingleton<IAppProgram, TAppProg>();
+      var appProg = (AppProgUnity<TAppProg>)Container.Resolve<IAppProgram>();
+      appProg.RegisterCommandClasses(Container);
+      appProg.SetDIContainer(Container);     
     }
 }
