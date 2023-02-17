@@ -7,7 +7,7 @@ using Serilog;
 namespace CommandDotNet.MDI.Helper;
 
 public class AppProgMDI<TRootCommand> 
-    : AppProgRunner<IServiceCollection, TRootCommand>
+    : CliApp<TRootCommand>
         where TRootCommand : class
 {
     public AppProgMDI(

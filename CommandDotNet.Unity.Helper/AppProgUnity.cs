@@ -7,7 +7,7 @@ using Config.Wrapper;
 namespace CommandDotNet.Unity.Helper;
 
 public class AppProgUnity<TRootCommand>
-    : AppProgRunner<IUnityContainer, TRootCommand>
+    : CliApp<TRootCommand>
         where TRootCommand : class
 {
     public Type[]? MannuallyRegisterCmds { get; set; }
