@@ -1,9 +1,8 @@
-﻿using CommandDotNet.Examples.App;
-using CommandDotNet.TestTools;
+﻿using CommandDotNet.TestTools;
 using FluentAssertions;
 using Xunit;
 
-namespace CommandDotNet.Examples.Tests;
+namespace CommandDotNet.App.Tests;
 
 public class StandardTests
 {
