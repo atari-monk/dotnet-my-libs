@@ -12,6 +12,11 @@ $libs = $libs0 + $libs1 + $libs2;
 
 Set-Location ..
 
+dotnet nuget locals all --clear
+dotnet nuget locals temp -c
+dotnet nuget locals global-packages -c
+dotnet restore
+
 foreach ($lib in $libs) {
   Set-Location $lib
 
