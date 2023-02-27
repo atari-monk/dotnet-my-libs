@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using Microsoft.Extensions.Configuration;
 using Xunit;
 
 namespace Config.Wrapper.Tests;
@@ -8,48 +7,41 @@ namespace Config.Wrapper.Tests;
 public class ConfigBuilderTests
     : ConfigFileTests
 {
-    [Fact]
-    public void Test_Required_Dependencies()
-    {
-        var doDep1 = () => SetSut(null, null);
+  [Fact]
+  public void Test_Required_Dependency_1()
+  {
+    var dep1 = () => SetConfigBuilder(null!, null!);
 
-        Assert.Throws<ArgumentNullException>("this.configurationBuilder",doDep1);
+    Assert.Throws<ArgumentNullException>("this.configurationBuilder", dep1);
+  }
 
-        var doDep2 = () => SetBuilder(null);
+  [Fact]
+  public void Test_Required_Dependency_2()
+  {
+    var dep2 = () => SetConfigBuilder(null!);
 
-        Assert.Throws<ArgumentNullException>("this.directorySystem", doDep2);
-    }
+    Assert.Throws<ArgumentNullException>("this.directorySystem", dep2);
+  }
 
-    #pragma warning disable 8604
-    private static IConfigBuilder SetSut(
-        IConfigurationBuilder? configurationBuilder
-        , IDirectorySys? dsys)
-    {
-        return new ConfigBuilder(
-            configurationBuilder
-            , dsys);
-    }
-    #pragma warning restore 8604
+  [Fact]
+  public void Test_No_File_Exception()
+  {
+    IConfigBuilder sut = SetConfigForNoFile();
 
-    [Fact]
-    public void Test_No_File_Exception()
-    {
-        IConfigBuilder sut = SetBuilderForNoFile();
+    var config = () => sut.BuildConfig();
 
-        var @do = () => sut.BuildConfig();
+    Assert.Throws<FileNotFoundException>(config);
+    Assert.NotNull(sut.ConfigurationBuilder);
+  }
 
-        Assert.Throws<FileNotFoundException>(@do);
-        Assert.NotNull(sut.ConfigurationBuilder);
-    }
+  [Fact]
+  public void Test_Ok()
+  {
+    IConfigBuilder sut = SetConfigForOkFile();
 
-    [Fact]
-    public void Test_Ok_Output()
-    {
-        IConfigBuilder sut = SetBuilderForOkFile();
+    var config = sut.BuildConfig();
 
-        var config = sut.BuildConfig();
-
-        Assert.NotNull(config);
-        Assert.NotNull(sut.ConfigurationBuilder);
-    }
+    Assert.NotNull(config);
+    Assert.NotNull(sut.ConfigurationBuilder);
+  }
 }
