@@ -4,17 +4,17 @@ using Unity;
 
 namespace Config.Wrapper;
 
-public class ConfigSuite 
-    : UnityDependencySuite
+public class ConfigSuite
+  : UnityDependencySuite
 {
-    public ConfigSuite(
-        IUnityContainer container)
-        : base(container)
-    {
-    }
+  public ConfigSuite(
+      IUnityContainer container)
+      : base(container)
+  {
+  }
 
-    protected override void RegisterAppData()
-    {
-        RegisterSet<AppConfigSet>();  
-    }
+  protected override void RegisterAppData()
+  {
+    RegisterSet<AppConfigSet>();
+  }
 }

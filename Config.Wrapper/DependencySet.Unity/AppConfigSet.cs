@@ -4,22 +4,22 @@ using Unity;
 
 namespace Config.Wrapper.Unity;
 
-public class AppConfigSet 
+public class AppConfigSet
     : UnityDependencySet
 {
-    public AppConfigSet(
-        IUnityContainer container) 
-        : base(container)
-    {
-    }
+  public AppConfigSet(
+      IUnityContainer container)
+      : base(container)
+  {
+  }
 
-    public override void Register()
-    {
-        Container.RegisterSingleton<IConfigurationBuilder, ConfigurationBuilder>();
-        Container.RegisterSingleton<IDirectorySys, DirectorySys>();
-        Container.RegisterSingleton<IConfigBuilder, ConfigBuilder>();
-        Container.RegisterInstance<IConfiguration>(
-            Container.Resolve<IConfigBuilder>().BuildConfig());
-        Container.RegisterSingleton<IConfigReader, ConfigReader>();
-    }
+  public override void Register()
+  {
+    Container.RegisterSingleton<IConfigurationBuilder, ConfigurationBuilder>()
+      .RegisterSingleton<IDirectorySys, DirectorySys>()
+      .RegisterSingleton<IConfigBuilder, ConfigBuilder>()
+      .RegisterInstance<IConfiguration>(
+        Container.Resolve<IConfigBuilder>().BuildConfig())
+      .RegisterSingleton<IConfigReader, ConfigReader>();
+  }
 }
