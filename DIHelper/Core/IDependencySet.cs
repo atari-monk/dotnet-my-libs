@@ -2,5 +2,5 @@
 
 public interface IDependencySet
 {
-	void Register();
+  void Register();
 }

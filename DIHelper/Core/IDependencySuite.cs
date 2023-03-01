@@ -2,5 +2,5 @@
 
 public interface IDependencySuite : IDependencySet
 {
-	TType Resolve<TType>();
+  TType Resolve<TType>();
 }
