@@ -1,8 +1,8 @@
-﻿namespace EFCore.Helper;
+namespace EFCore.Helper;
 
-public interface IUnitOfWork 
+public interface IUnitOfWork
     : IDisposable
         , ITransaction
 {
-    void Save();
+  void Save();
 }

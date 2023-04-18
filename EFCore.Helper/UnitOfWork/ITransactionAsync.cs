@@ -4,6 +4,6 @@ namespace EFCore.Helper;
 
 public interface ITransactionAsync
 {
-    Task<IDbContextTransaction> BeginTransactionAsync(
-        CancellationToken cancellationToken = default);
+  Task<IDbContextTransaction> BeginTransactionAsync(
+      CancellationToken cancellationToken = default);
 }

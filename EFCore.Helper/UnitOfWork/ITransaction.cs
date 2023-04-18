@@ -4,5 +4,5 @@ namespace EFCore.Helper;
 
 public interface ITransaction
 {
-    IDbContextTransaction BeginTransaction();
+  IDbContextTransaction BeginTransaction();
 }

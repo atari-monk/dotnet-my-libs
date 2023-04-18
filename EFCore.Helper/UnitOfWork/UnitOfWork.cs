@@ -3,18 +3,18 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 namespace EFCore.Helper;
 
-public abstract class UnitOfWork 
-	: UnitOfWorkDisposer 
+public abstract class UnitOfWork
+  : UnitOfWorkDisposer
         , IUnitOfWork
 {
-    protected UnitOfWork(DbContext context)
-        : base(context)
-    {
-    }
+  protected UnitOfWork(DbContext context)
+      : base(context)
+  {
+  }
 
-    public void Save() => 
-		Context.SaveChanges();
+  public void Save() =>
+  Context.SaveChanges();
 
-    public IDbContextTransaction BeginTransaction() => 
-        Context.Database.BeginTransaction();
+  public IDbContextTransaction BeginTransaction() =>
+      Context.Database.BeginTransaction();
 }
