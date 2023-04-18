@@ -2,12 +2,12 @@
 
 namespace DIHelper.MicrosoftDI;
 
-public abstract class MDIDependencySet 
+public abstract class MDIDependencySet
     : DependencySet<IServiceCollection>
 {
-    public MDIDependencySet(
-        IServiceCollection container)
-        : base(container)
-    {
-    }
+  public MDIDependencySet(
+      IServiceCollection container)
+      : base(container)
+  {
+  }
 }

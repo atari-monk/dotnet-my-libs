@@ -3,5 +3,5 @@
 public interface IAppProgram
     : IMainProgram
 {
-    void Setup();
+  void Setup();
 }
